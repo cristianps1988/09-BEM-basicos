@@ -73,3 +73,81 @@ img {
     padding: 0;
 }
 
+/* Productos */
+
+.productos{
+    margin-top: 5rem;
+}
+
+.productos__heading{
+    color: var(--blanco);
+    text-align: center;
+    padding: 3rem 0;
+}
+
+@media (min-width: 768px){
+    .productos__grid{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+}
+
+.producto{
+    background-color: var(--blanco);
+    margin-bottom: 2rem;
+}
+
+.producto:last-of-type{
+    margin-bottom: 0;
+}
+
+@media (min-width: 768px){
+    .producto{
+        margin-bottom: 0;
+    }
+}
+
+.producto__contenido{
+    padding: 2rem;
+}
+
+.producto__nombre{
+    font-size: 4rem;
+}
+
+.producto__descripcion{
+    margin: 0;
+    color: #8b8b8b
+}
+
+.producto__precios{
+    display: flex;
+    justify-content: space-between;
+}
+
+.producto__precio{
+    font-size: 4rem;
+    font-weight: 900;
+    margin: 0;
+    color: green;
+}
+
+.producto__boton{
+    all: unset;
+    width: 100%;
+    background-color:var(--azul);
+    color: var(--blanco);
+    padding: 1rem 0;
+    text-align: center;
+    cursor: pointer;
+}
+
+.producto__boton:hover{
+    background-color: #024976;
+}
+
+.producto__precio--oferta{
+    color: red;
+    text-decoration: line-through;
+}
